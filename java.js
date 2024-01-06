@@ -5,6 +5,7 @@ let k = 0;
 let z = Math.round(Math.random() * 20);
 document.querySelector(".button").addEventListener("click", GameLogic);
 document.querySelector(".again").addEventListener("click", TryAgain);
+console.log(z);
 
 function GameLogic() {
   const x = Number(document.querySelector(".input_1").value);
@@ -63,6 +64,5 @@ function TryAgain() {
   interFace("Guess The Number between 1 to 20", -1);
   document.querySelector(".scorevalue").textContent = score;
   z = Math.round(Math.random() * 20);
-  document.querySelector(".item_2").textContent = z;
   k = 0;
 }
