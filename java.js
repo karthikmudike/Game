@@ -56,6 +56,7 @@ function interFace(ValueOfAnswer, color) {
       "#6d8083";
     document.querySelector(".input_1").style.backgroundColor = "#6d8083";
      document.querySelector(".item_2").textContent = "?";
+    document.querySelector(".guess").style.fontSize = "x-large";
   }
 }
 
