@@ -5,7 +5,6 @@ let k = 0;
 let z = Math.round(Math.random() * 20);
 document.querySelector(".button").addEventListener("click", GameLogic);
 document.querySelector(".again").addEventListener("click", TryAgain);
-document.querySelector(".item_2").textContent = z;
 
 function GameLogic() {
   const x = Number(document.querySelector(".input_1").value);
@@ -15,6 +14,7 @@ function GameLogic() {
   } else if (x >= 1 && x <= 20 && score != 0 && k != 1) {
     if (x == z) {
       interFace("Congrats, You Win", 1);
+      document.querySelector(".item_2").textContent = z;
       if (score > HighScore) {
         HighScore = score;
         document.querySelector(".highscorevalue").textContent = HighScore;
