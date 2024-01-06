@@ -3,6 +3,10 @@ let score = 20;
 let HighScore = 0;
 let k = 0;
 let z = Math.round(Math.random() * 20);
+ if(z==0)
+  {
+    z=z+1;
+  }
 document.querySelector(".button").addEventListener("click", GameLogic);
 document.querySelector(".again").addEventListener("click", TryAgain);
 console.log(z);
