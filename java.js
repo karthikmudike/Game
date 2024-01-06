@@ -67,4 +67,9 @@ function TryAgain() {
   document.querySelector(".scorevalue").textContent = score;
   z = Math.round(Math.random() * 20);
   k = 0;
+  console.log(z);
+  if(z==0)
+  {
+    z=z+1;
+  }
 }
