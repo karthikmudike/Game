@@ -41,15 +41,16 @@ function GameLogic() {
 
 function interFace(ValueOfAnswer, color) {
   document.querySelector(".guess").textContent = ValueOfAnswer;
-  document.querySelector(".guess").style.fontSize = "xxx-large";
   if (color == 1) {
     document.querySelector(".backgorundColor").style.backgroundColor =
       "#15c805";
     document.querySelector(".input_1").style.backgroundColor = "#15c805";
+    document.querySelector(".guess").style.fontSize = "xxx-large";
   } else if (color == 0) {
     document.querySelector(".backgorundColor").style.backgroundColor =
       "#ff0000";
     document.querySelector(".input_1").style.backgroundColor = "#ff0000";
+    document.querySelector(".guess").style.fontSize = "xxx-large";
   } else if (color == -1) {
     document.querySelector(".backgorundColor").style.backgroundColor =
       "#6d8083";
